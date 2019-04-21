@@ -8,6 +8,7 @@ const cron   = require('node-cron'),
  * Executes Roots' trellis syncronization script on a schedule
  */
 syncScheduler = {
+
   /**
    * Init
    *
@@ -39,7 +40,7 @@ syncScheduler = {
               .runSync(path, cmd)
           }, this.config.cronOptions).start()
 
-        : this.consoleOut.sinvalidCronFormat(site)
+        : this.consoleOut.invalidCronFormat(site)
     }
     return this
   },

@@ -1,0 +1,29 @@
+{
+  "name": "sync-scripts-scheduler",
+  "version": "0.0.1",
+  "author": "Tiny Pixel Collective <developers@tinypixel.io",
+  "homepage": "https://tinypixel.dev",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pixelcollective/sync-scripts-scheduler"
+  },
+  "bugs": {
+    "url": "https://github.com/pixelcollective/sync-scripts-scheduler/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "sync-script-scheduler.js",
+  "scripts": {
+    "start": "node sync-script-scheduler.js"
+  },
+  "dependencies": {
+    "forever-monitor": "^1.7.1",
+    "node-cron": "^2.0.3",
+    "shelljs": "^0.8.3"
+  }
+}

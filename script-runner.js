@@ -4,10 +4,10 @@ const { syncJob } = require('./sync/index'),
 /**
  * Sync
  */
-/* syncJob
+syncJob
   .init()
   .validateSSH()
-  .runCron() */
+  .runCron()
 
 /**
  * Test

@@ -1,3 +1,6 @@
 node_modules
 config.js
 yarn-error.log
+
+/** Cypress **/
+cypress/screenshots/networkavailable.js/*

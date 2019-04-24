@@ -17,11 +17,13 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
-  "main": "sync-script-scheduler.js",
+  "main": "script-runner.js",
   "scripts": {
-    "start": "node sync-script-scheduler.js"
+    "script-scheduler": "node script-runner.js",
+    "test": "yarn run cypress networkavailable.js"
   },
-  "dependencies": {
+  "devDependencies": {
+    "cypress": "^3.2.0",
     "forever-monitor": "^1.7.1",
     "node-cron": "^2.0.3",
     "shelljs": "^0.8.3"

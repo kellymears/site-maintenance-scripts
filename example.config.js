@@ -7,22 +7,35 @@ module.exports = {
   logFile: '/users/username/logs/sync-script-process',
   sites: [
     {
-      name: 'Example Site',
-      scriptPath: 'example.com/site/scripts/',
-      script: 'sync.sh',
+      name: 'Example',
+      domain: 'example.org',
+      scriptPath: 'example.org/example.org/scripts/',
+      script: 'scheduled-sync.sh',
       origin: 'staging',
       destination: 'development',
       schedule: '0 2 * * *',
       local: true,
     },
     {
-      name: 'Example Site 2',
-      scriptPath: 'example2.com/site/scripts/',
-      script: 'sync.sh',
+      name: 'Another Example',
+      domain: 'anotherexample.org',
+      scriptPath: 'anotherexample.org/anotherexample.org/scripts/',
+      script: 'scheduled-sync.sh',
       origin: 'staging',
       destination: 'development',
       schedule: '0 2 * * *',
       local: true,
+      screenshot: true,
+      testing: {
+        routes: [
+          {
+            name: 'Stories',
+            path: '/stories',
+            screenshot: true,
+          },
+        ],
+        exceptions: [] // place any chrome errors to be ignored here
+      },
     },
   ],
   cronOptions: {

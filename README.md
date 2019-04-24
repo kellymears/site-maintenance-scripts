@@ -16,6 +16,10 @@ Automate your Trellis syncs.
 
 - The function of each configuration parameter is largely self-evident.
 
+- `yarn run script-scheduler` to run scripts
+
+- `yarn run cypress open` will initiate the test suite manually. Runs in an electron window.
+
 ### Notes
 
 - This software is in alpha. Please test thoroughly and check your logs frequently.

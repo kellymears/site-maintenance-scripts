@@ -38,6 +38,9 @@ module.exports = {
       },
     },
   ],
+  testsConfig: {
+    spec: 'networkavailable.js'
+  },
   cronOptions: {
     scheduled: true,
     timezone: 'America/Los_Angeles',

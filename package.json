@@ -26,6 +26,6 @@
     "cypress": "^3.2.0",
     "forever-monitor": "^1.7.1",
     "node-cron": "^2.0.3",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.5"
   }
 }
